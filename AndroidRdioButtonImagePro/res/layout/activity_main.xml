@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myradio="http://schemas.android.com/apk/res/com.example.androidrdiobuttonimagepro"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+	<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+       <!-- android:clickable="true"必须加上此属性，否则点击之后不会被选中 --> 
+        <RadioGroup
+            android:id="@+id/rgs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <com.example.rdioimage.MyRadioButton
+                android:id="@+id/tab_a"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:button="@null"
+                android:clickable="true"
+                
+                myradio:drawableTop="@drawable/shouye_radiobutton"
+                myradio:drawableSize="20dp"
+                
+                android:gravity="center"
+                android:text="调整大小"
+                android:textSize="13sp" />
+
+            <com.example.rdioimage.MyRadioButton
+                android:id="@+id/tab_b"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:button="@null"
+                android:checked="true"
+                android:clickable="true"
+                
+                myradio:drawableTop="@drawable/fenlei_radiobutton"
+                myradio:drawableSize="30dp"
+                
+                android:text="调整大小"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/tab_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@null"
+                android:button="@null"
+                android:drawableTop="@drawable/gouwuche_bg"
+                android:gravity="center"
+                android:paddingTop="10dip" />
+
+            <RadioButton
+                android:id="@+id/tab_d"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:button="@null"
+                android:drawableTop="@drawable/faxian_radiobutton"
+                android:gravity="center"
+                android:text="标准"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/tab_e"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:button="@null"
+                android:drawableTop="@drawable/wode_radiobutton"
+                android:gravity="center"
+                android:text="标准"
+                
+                android:textSize="13sp" />
+        </RadioGroup>
+    </LinearLayout>
+</RelativeLayout>
